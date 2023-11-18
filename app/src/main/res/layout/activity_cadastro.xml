@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Cadastro">
+
+    <TextView
+        android:id="@+id/textCadastro"
+        android:layout_width="231dp"
+        android:layout_height="49dp"
+        android:text="Cadastre-se"
+        android:textAlignment="center"
+        android:textColor="@color/blue3"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/btnCadastroTC"
+        android:layout_width="151dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/blue3"
+        android:text="Cadastrar"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordConfirmTC"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/textou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="__________________ ou _________________"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnloginTC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastroTC"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnloginTC"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#909DFA"
+        android:text="Faça login"
+        android:textAlignment="center"
+        android:textColor="#0C144A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastroTC"
+        app:layout_constraintVertical_bias="0.608" />
+
+
+    <EditText
+        android:id="@+id/inputPasswordTC"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint=" Senha"
+        style="@style/inputcadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmailTC" />
+
+    <EditText
+        android:id="@+id/inputUserTC"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:hint=" Nome Completo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCadastro"
+        style="@style/inputcadastro" />
+
+    <EditText
+        android:id="@+id/inputEmailTC"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        style="@style/inputcadastro"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:hint=" Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputUserTC" />
+
+    <EditText
+        android:id="@+id/inputPasswordConfirmTC"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint=" Confirme a senha"
+        style="@style/inputcadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordTC" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

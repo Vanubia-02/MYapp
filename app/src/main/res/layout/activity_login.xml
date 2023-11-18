@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Login">
+
+
+    <Button
+        android:id="@+id/btnCadastroTL"
+        android:layout_width="237dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="#F3A9A9"
+        android:text="Realizar cadastro"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#720606"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginTL"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <Button
+        android:id="@+id/btnloginTL"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#BC0909"
+        android:text="Logar"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="388dp"
+        android:layout_height="49dp"
+        android:text="Seja Bem Vindo(a)"
+        android:textAlignment="center"
+        android:textColor="#BC0909"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/textoul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__________________ ou _________________"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastroTL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginTL"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <EditText
+        android:id="@+id/inputEmailTL"
+        style="@style/inputlogin"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="228dp"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:hint=" Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputPasswordTL"
+        style="@style/inputlogin"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint=" Senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmailTL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

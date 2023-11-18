@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Atualizar">
+
+
+    <ImageView
+        android:id="@+id/imagePerfilsuperiorAlter"
+        android:layout_width="415dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cabecalho" />
+
+    <ImageView
+        android:id="@+id/AlterImgperfil"
+        android:layout_width="199dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePerfilsuperiorAlter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagePerfilsuperiorAlter"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/user" />
+
+
+    <EditText
+        android:id="@+id/edtPass"
+        style="@style/alterdados"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint=" Senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtnome"
+        style="@style/alterdados"
+        android:layout_marginTop="248dp"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:hint=" Nome Completo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/alterdados"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:hint=" Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtnome" />
+
+    <EditText
+        android:id="@+id/edtPassconfirm"
+        style="@style/alterdados"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint=" Confirme a senha"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlterar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAlterar"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#FF8F01"
+        android:text="Alterar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgretornoP"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePerfilsuperiorAlter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

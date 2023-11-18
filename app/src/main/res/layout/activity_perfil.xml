@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Perfil">
+
+
+    <ImageView
+        android:id="@+id/imagePerfilsuperior"
+        android:layout_width="415dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cabecalho" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="199dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePerfilsuperior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagePerfilsuperior"
+        app:layout_constraintVertical_bias="0.695"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="377dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerfilsuperior"
+        app:layout_constraintVertical_bias="0.131"
+        app:srcCompat="@drawable/cabecalho" />
+
+    <TextView
+        android:id="@+id/txtEmailperfil"
+        android:layout_width="331dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="29dp"
+        android:text="email@gmail.com"
+        android:textAlignment="center"
+        android:textColor="#250000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserPerfil"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtUserPerfil"
+        android:layout_width="330dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:text="Nome do Usuario"
+        android:textAlignment="center"
+        android:textColor="#250000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerfilsuperior" />
+
+    <Button
+        android:id="@+id/btnAlterar"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FF8F01"
+        android:text="Alterar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.079" />
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="266dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#202B7B"
+        android:text="Logout"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlterar"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#A3CE0A0A"
+        android:text="Deletar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgretorno"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePerfilsuperior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
